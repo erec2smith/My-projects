@@ -30,6 +30,7 @@ body{
     position:absolute;
     top:0;
     padding:60px;
+    /*   Follow me on Instagram : erec__smith   */
     transition:.6s ease;
 }
 
@@ -152,4 +153,5 @@ p{
         position:relative;
         transform:none !important;
     }
+
 }
