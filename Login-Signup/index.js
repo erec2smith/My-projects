@@ -8,10 +8,12 @@ btn.onclick=()=>{
     if(container.classList.contains('active')){
         title.textContent='Already have an account?'
         text.textContent='Login and continue your experience'
+        //  Follow me on Instagram : erec__smith
         btn.textContent='Login'
     }else{
         title.textContent='New here?'
         text.textContent='Create an account and discover more features'
         btn.textContent='Create an account'
     }
+
 }
