@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weekly To-Do</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app">
+  <h1>Weekly Discipline Planner</h1>
+
+  <div class="task-input">
+    <input id="newTask" placeholder="Add new task..." />
+    <button onclick="addTask()">Add</button>
+  </div>
+
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th>
+          <th>✏️</th>
+        </tr>
+      </thead>
+      <tbody id="tasks"></tbody>
+    </table>
+  </div>
+
+  <!--   Follow me on Instagram : erec__smith   -->
+
+  <div class="stats">
+    <h3>Weekly Statistics</h3>
+    <div class="stat-row"><span>Total Points:</span><span id="points">0</span></div>
+    <div class="stat-row"><span>Max Possible:</span><span id="maxPoints">0</span></div>
+    <div class="stat-row"><span>Discipline Rate:</span><span id="rate">0%</span></div>
+  </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
