@@ -1,0 +1,127 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif
+}
+body{
+min-height:100vh;
+background:linear-gradient(180deg,#3b0a6e,#1a0433);
+color:#fff;
+overflow-x:hidden
+}
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 60px
+}
+nav h1{
+font-size:22px;
+font-weight:600
+}
+nav ul{
+list-style:none;
+display:flex;
+gap:30px
+}
+nav ul li a{
+text-decoration:none;
+color:#dcd7e6;
+font-size:14px;
+transition:.3s
+}
+nav ul li a:hover{
+color:#fff
+}
+.container{
+max-width:1200px;
+margin:auto;
+padding:60px 20px
+}
+.title{
+text-align:center;
+font-size:36px;
+margin-bottom:60px
+}
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px
+}
+.card{
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(10px);
+border-radius:20px;
+padding:35px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+transition:.4s
+}
+.card:hover{
+transform:translateY(-10px)
+}
+.card.standard{
+background:rgba(255,255,255,.85);
+color:#2a1458
+}
+.card h2{
+font-size:18px;
+margin-bottom:20px
+}
+.price{
+font-size:48px;
+font-weight:700
+}
+.price span{
+font-size:14px;
+font-weight:400
+}
+.features{
+margin:30px 0;
+display:flex;
+flex-direction:column;
+gap:15px
+}
+.features li{
+list-style:none;
+font-size:14px;
+display:flex;
+gap:10px;
+align-items:flex-start
+}
+.features li::before{
+content:"✓";
+color:#9b6cff;
+font-weight:700
+}
+.card.standard .features li::before{
+color:#5b2cff
+}
+.btn{
+margin-top:auto;
+background:#4b137d;
+border:none;
+color:#fff;
+padding:14px;
+border-radius:30px;
+cursor:pointer;
+/*  instagram : erec__smith  */
+font-size:14px;
+transition:.3s
+}
+.card.standard .btn{
+background:#5b2cff
+}
+.btn:hover{
+opacity:.85
+}
+@media(max-width:768px){
+nav{
+padding:20px
+}
+.title{
+font-size:28px
+}
+}
